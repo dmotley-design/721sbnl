@@ -730,8 +730,12 @@ footer {
         padding-top: 6rem;
     }
     
-    .info-section, .services, .gallery, .testimonial {
+    .info-section, .services, .gallery, .testimonial, .about-page-content {
         padding: 4rem 0;
+    }
+
+    .page-header {
+        padding: 8rem 0 4rem;
     }
 
     footer {
