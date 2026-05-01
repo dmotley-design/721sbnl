@@ -182,7 +182,9 @@ p {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 4rem;
     display: flex;
     align-items: center;
     background-image: url('assets/7211.JPG');
@@ -536,8 +538,24 @@ footer {
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    
+    .logo-img {
+        height: 55px;
+    }
+
+    .hero-content {
+        padding-top: 6rem;
+    }
+    
+    .promos, .services, .gallery, .testimonial {
+        padding: 4rem 0;
+    }
+
+    footer {
+        padding: 4rem 0 2rem;
+    }
     
     .mobile-toggle {
         display: flex;
