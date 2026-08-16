@@ -7,10 +7,12 @@
     <meta name="description" content="Enjoy a luxurious sports viewing experience at 721 sports bar & lounge, featuring handmade food and expertly crafted beverages in a VIP atmosphere.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="scroll-progress"></div>
+
     <!-- Navbar -->
     <header class="navbar" id="navbar">
         <div class="container nav-container">
@@ -49,16 +51,16 @@
             
             <div class="stats-container fade-in delay-4">
                 <div class="stat-box">
-                    <h3>150+</h3>
-                    <p>Top Rated</p>
-                </div>
-                <div class="stat-box">
                     <div class="stars">★★★★★</div>
-                    <p>Rated 5 Stars</p>
+                    <p>Rated on Google</p>
                 </div>
                 <div class="stat-box">
-                    <h3>15</h3>
-                    <p>VIP Experience</p>
+                    <h3>4.7 / 5</h3>
+                    <p>Google Rating</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Veteran-Owned</h3>
+                    <p>& Operated</p>
                 </div>
             </div>
         </div>
@@ -69,12 +71,13 @@
         <div class="container info-grid">
             <div class="info-content slide-up">
                 <h2>Elevating the Game Day Experience</h2>
+                <div class="section-divider"></div>
                 <p class="lead-text">Welcome to 721 Sports Bar & Lounge, where premium dining meets ultimate sports entertainment.</p>
                 
                 <div class="happy-hour-block">
                     <div class="hh-content">
-                        <h3>Daily Happy Hour</h3>
-                        <p>Join us every day from <strong>3 PM to 6 PM</strong> for expertly crafted beverages and exclusive specials.</p>
+                        <h3>Happy Hour</h3>
+                        <p>Join us <strong>Monday – Friday</strong> from <strong>3 PM to 6 PM</strong> &amp; every day <strong>9 PM to Close</strong> for expertly crafted beverages and exclusive specials.</p>
                     </div>
                 </div>
             </div>
@@ -83,21 +86,26 @@
                 <h3>Hours of Operation</h3>
                 <div class="hours-list">
                     <div class="hours-row">
-                        <span>Kitchen (Mon-Tue)</span>
-                        <span>3:00 PM - 9:00 PM</span>
+                        <span>Mon – Wed</span>
+                        <span>12:00 PM – 10:00 PM</span>
                     </div>
                     <div class="hours-row">
-                        <span>Kitchen (Wed-Sun)</span>
-                        <span>12:00 PM - 9:00 PM</span>
+                        <span>Thursday</span>
+                        <span>12:00 PM – 11:00 PM</span>
                     </div>
                     <div class="hours-row">
-                        <span>Restaurant (Mon-Tue)</span>
-                        <span>3:00 PM - 10:00 PM</span>
+                        <span>Friday</span>
+                        <span>12:00 PM – 1:00 AM</span>
                     </div>
                     <div class="hours-row">
-                        <span>Restaurant (Wed-Sun)</span>
-                        <span>12:00 PM - 10:00 PM</span>
+                        <span>Saturday</span>
+                        <span>11:00 AM – 1:00 AM</span>
                     </div>
+                    <div class="hours-row">
+                        <span>Sunday</span>
+                        <span>11:00 AM – 9:00 PM</span>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -108,6 +116,7 @@
         <div class="container">
             <div class="section-header slide-up">
                 <h2>Our Services</h2>
+                <div class="section-divider center"></div>
                 <p>Experience luxury and comfort in every aspect.</p>
             </div>
             <div class="services-grid">
@@ -115,6 +124,7 @@
                 <div class="service-card slide-up">
                     <div class="service-image" style="background-image: url('assets/7212.JPG');"></div>
                     <div class="service-content">
+                        <span class="service-icon">🍽️</span>
                         <h3>Dining</h3>
                         <p>Handmade food crafted by expert chefs. Gourmet flavors that perfectly complement your game day.</p>
                     </div>
@@ -123,6 +133,7 @@
                 <div class="service-card slide-up delay-1">
                     <div class="service-image" style="background-image: url('assets/7213.JPG');"></div>
                     <div class="service-content">
+                        <span class="service-icon">🍹</span>
                         <h3>Beverages</h3>
                         <p>Curated drinks from skilled mixologists. Enjoy a variety of premium cocktails and beverages.</p>
                     </div>
@@ -131,6 +142,7 @@
                 <div class="service-card slide-up delay-2">
                     <div class="service-image" style="background-image: url('assets/7214.JPG');"></div>
                     <div class="service-content">
+                        <span class="service-icon">📺</span>
                         <h3>Entertainment</h3>
                         <p>The best place to watch sports with friends! Enjoy our VIP lounges and massive high-def screens.</p>
                     </div>
@@ -151,11 +163,28 @@
         <div class="container">
             <div class="section-header slide-up">
                 <h2>The Vibe</h2>
+                <div class="section-divider center"></div>
                 <p>A glimpse into the 721 experience.</p>
             </div>
             <div class="gallery-grid">
-                <img src="assets/7216.JPG" alt="Gallery Image" class="gallery-img slide-up">
-                <img src="assets/7217.JPG" alt="Gallery Image" class="gallery-img slide-up delay-1">
+                <div class="gallery-item slide-up">
+                    <img src="assets/7216.JPG" alt="721 Sports Bar atmosphere" class="gallery-img">
+                </div>
+                <div class="gallery-item slide-up delay-1">
+                    <img src="assets/7217.JPG" alt="721 Sports Bar lounge" class="gallery-img">
+                </div>
+                <div class="gallery-item slide-up delay-2">
+                    <img src="assets/bar-garnish.webp" alt="Handcrafted bar garnishes" class="gallery-img">
+                </div>
+                <div class="gallery-item slide-up">
+                    <img src="assets/cocktail-2.webp" alt="Craft cocktail" class="gallery-img">
+                </div>
+                <div class="gallery-item slide-up delay-1">
+                    <img src="assets/bar-citrus.webp" alt="Fresh citrus bar prep" class="gallery-img">
+                </div>
+                <div class="gallery-item slide-up delay-2">
+                    <img src="assets/bar-tools.webp" alt="Premium gold bar tools" class="gallery-img">
+                </div>
             </div>
         </div>
     </section>
@@ -211,6 +240,15 @@
             <p>&copy; 2025 721 Sports Bar & Lounge. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button id="lightbox-close" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" aria-label="Back to top">&uarr;</button>
 
     <script src="script.js"></script>
 </body>
