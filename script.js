@@ -127,3 +127,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Navigation menu dropdown
+const menuDropdown = document.querySelector('.nav-dropdown');
+const menuDropdownToggle = document.querySelector('.nav-dropdown-toggle');
+
+if (menuDropdown && menuDropdownToggle) {
+    menuDropdownToggle.addEventListener('click', function (event) {
+        event.stopPropagation();
+        menuDropdown.classList.toggle('open');
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!menuDropdown.contains(event.target)) {
+            menuDropdown.classList.remove('open');
+        }
+    });
+}
