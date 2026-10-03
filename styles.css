@@ -1016,3 +1016,57 @@ footer {
     .hours-card             { padding: 2rem 1.25rem; }
     .happy-hour-block       { padding: 1.5rem; }
 }
+/* Navigation Menu Dropdown */
+.nav-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-dropdown-toggle {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    text-transform: uppercase;
+    letter-spacing: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.nav-dropdown-toggle::after {
+    content: " ▾";
+    font-size: 0.8em;
+}
+
+.nav-dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 160px;
+    background: #111;
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    border-radius: 6px;
+    padding: 8px 0;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.nav-dropdown-content a {
+    display: block;
+    padding: 10px 18px;
+    white-space: nowrap;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-dropdown-content a:hover {
+    color: #d4af37;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-dropdown.open .nav-dropdown-content {
+    display: block;
+}
