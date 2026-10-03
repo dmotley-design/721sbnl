@@ -1041,11 +1041,19 @@ footer {
     letter-spacing: inherit;
     cursor: pointer;
     padding: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    white-space: nowrap;
+    line-height: 1;
 }
 
 .nav-dropdown-toggle::after {
     content: " ▾";
-    font-size: 0.8em;
+    font-size: 0.7em;
+    line-height: 1;
+    position: static;
+    transform: none;
 }
 
 .nav-dropdown-content {
