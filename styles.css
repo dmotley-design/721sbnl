@@ -194,7 +194,7 @@ strong { color: var(--text); font-weight: 600; }
 }
 
 .nav-links a:not(.btn)::after,
-.nav-dropdown-toggle::after {
+.nav-dropdown-toggle::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -212,7 +212,7 @@ strong { color: var(--text); font-weight: 600; }
 }
 
 .nav-links a:not(.btn):hover::after,
-.nav-dropdown-toggle:hover::after {
+.nav-dropdown-toggle:hover::before {
     width: 100%;
 }
 
