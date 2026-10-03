@@ -193,10 +193,12 @@ strong { color: var(--text); font-weight: 600; }
     padding-bottom: 4px;
 }
 
-.nav-links a:not(.btn)::after {
+.nav-links a:not(.btn)::after,
+.nav-dropdown-toggle::after {
     content: '';
     position: absolute;
-    bottom: 0; left: 50%;
+    bottom: 0;
+    left: 50%;
     transform: translateX(-50%);
     width: 0;
     height: 1px;
@@ -204,8 +206,15 @@ strong { color: var(--text); font-weight: 600; }
     transition: width 0.3s ease;
 }
 
-.nav-links a:not(.btn):hover { color: var(--gold); }
-.nav-links a:not(.btn):hover::after { width: 100%; }
+.nav-links a:not(.btn):hover,
+.nav-dropdown-toggle:hover {
+    color: var(--gold);
+}
+
+.nav-links a:not(.btn):hover::after,
+.nav-dropdown-toggle:hover::after {
+    width: 100%;
+}
 
 .mobile-toggle {
     display: none;
